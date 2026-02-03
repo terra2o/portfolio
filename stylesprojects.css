@@ -1,0 +1,243 @@
+html {
+    font-size: 150%;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body{
+    background: linear-gradient(to bottom, #1a2a3a, #333333);
+    font-family: "Roboto", sand-serif;
+    color: white;
+    font-size: 1.2rem;
+    min-height: 100vh;
+}
+
+ul{
+    font-size: larger;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+iframe {
+    border-radius: 12px;
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.welcome h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #b7dbff, #7db3e8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.content-wrapper{
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    padding: 0 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.buttons a {
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(to bottom, #b7dbff, #90c1f2);
+    color: #1a1a1a;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buttons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to bottom, #a3d1ff, #7db3e8);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.buttons button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(to bottom, #b7dbff, #90c1f2);
+    color: #1a1a1a;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.description {
+    margin-top: 2.5rem;
+    text-align: center;
+    line-height: 1.6;
+    color: #e6f2ff;
+    background: rgba(27, 42, 58, 0.5);
+    border-radius: 12px;
+    padding: 1.5rem;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(183, 219, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+.list {
+    margin-top: 2.5rem;
+    text-align: center;
+    line-height: 1.6;
+    color: #e6f2ff;
+    background: rgba(27, 42, 58, 0.5);
+    border-radius: 12px;
+    padding: 1.5rem;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(183, 219, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .description {
+        padding: 1.25rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .description {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.description p {
+    margin-bottom: 0.5rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* GitHub Link */
+.github-link {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+    background: rgba(27, 42, 58, 0.7);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(183, 219, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.github-link:hover {
+    transform: translateY(-3px);
+    background: rgba(27, 42, 58, 0.9);
+    border-color: rgba(183, 219, 255, 0.4);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.github-icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) saturate(100%) invert(85%) sepia(10%) saturate(865%) hue-rotate(185deg) brightness(105%) contrast(105%);
+}
+
+/* Media */
+@media (max-width: 768px) {
+    .github-link {
+        top: 1rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .github-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .github-link {
+        top: 0.75rem;
+        right: 0.75rem;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .github-icon {
+        width: 22px;
+        height: 22px;
+    }
+}
