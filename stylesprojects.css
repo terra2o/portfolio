@@ -1,16 +1,16 @@
 html {
-    font-size: 150%;
+    font-size: 112%;
 }
 
 @media (max-width: 768px) {
     html {
-        font-size: 200%;
+        font-size: 100%;
     }
 }
 
 @media (max-width: 480px) {
     html {
-        font-size: 100%;
+        font-size: 90%;
     }
 }
 
@@ -25,7 +25,7 @@ a:hover {
 
 body{
     background: linear-gradient(to bottom, #1a2a3a, #333333);
-    font-family: "Roboto", sand-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
     font-size: 1.2rem;
     min-height: 100vh;
@@ -88,7 +88,6 @@ iframe {
 
 .buttons a {
     padding: 1rem 2rem;
-    margin: 0 1rem;
     font-size: 1.2rem;
     font-weight: 600;
     background: linear-gradient(to bottom, #b7dbff, #90c1f2);
@@ -106,15 +105,6 @@ iframe {
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
     background: linear-gradient(to bottom, #a3d1ff, #7db3e8);
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-    width: 100%;
 }
 
 .buttons button {
@@ -179,6 +169,92 @@ iframe {
 
 .underline {
     text-decoration: underline;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.service-card {
+    background: rgba(183, 219, 255, 0.07);
+    border: 1px solid rgba(183, 219, 255, 0.15);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    background: rgba(183, 219, 255, 0.12);
+    border-color: rgba(183, 219, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    color: #b7dbff;
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #a0bcd8;
+    margin-bottom: 0.75rem;
+}
+
+.service-card ul {
+    font-size: 0.9rem;
+    padding-left: 1.25rem;
+    color: #e6f2ff;
+    line-height: 1.7;
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Box */
+.box {
+    background: rgba(183, 219, 255, 0.07);
+    border: 1px solid rgba(183, 219, 255, 0.15);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.box:hover {
+    background: rgba(183, 219, 255, 0.12);
+    border-color: rgba(183, 219, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box h3 {
+    font-size: 1.1rem;
+    color: #b7dbff;
+    margin-bottom: 0.5rem;
+}
+
+.box p {
+    font-size: 0.9rem;
+    color: #a0bcd8;
+    margin-bottom: 0.75rem;
+}
+
+.box a {
+    font-size: 0.9rem;
+    color: #a0bcd8;
+    margin-bottom: 0.75rem;
 }
 
 /* GitHub Link */
