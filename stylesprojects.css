@@ -41,6 +41,9 @@ img {
 }
 
 iframe {
+    width: 100%;
+    max-width: 552px;
+    height: 167px;
     border-radius: 12px;
 }
 
